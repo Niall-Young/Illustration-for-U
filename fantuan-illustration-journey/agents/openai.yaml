@@ -1,0 +1,4 @@
+interface:
+  display_name: "小饭团的奇妙之旅"
+  short_description: "为文章和物料规划并生成小饭团风格插图、配图和放置说明"
+  default_prompt: "Use $fantuan-illustration-journey to plan and generate article illustrations with the 小饭团 style."
