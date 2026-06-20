@@ -21,7 +21,7 @@ images/
 guide.md
 ```
 
-默认图片比例为 `16:9`。图片风格为真实 3D 等轴测场景 + 2D 小饭团插画角色 + 手绘涂鸦线条和少量文字。
+默认图片比例为 `16:9`。图片风格为浅灰色背景上的小型 3D 等轴测浮岛 + 固定形象的平面 2D 小饭团插画角色 + 少量手绘涂鸦线条和必要时的短手写批注。它应该像文章正文里的轻量插画，而不是抢占视觉重心的封面图或复杂大场景。
 
 ## English
 
@@ -44,4 +44,4 @@ images/
 guide.md
 ```
 
-The default image aspect ratio is `16:9`. The visual style combines realistic 3D isometric scenes, a 2D illustrated Fantuan character, hand-drawn doodle lines, and sparse text.
+The default image aspect ratio is `16:9`. The visual style combines a shallow light gray background, a small 3D isometric floating-island vignette, a fixed flat 2D illustrated Fantuan character, sparse hand-drawn doodle lines, and short handwritten note text when useful. It should read as a lightweight in-article illustration, not a cover image or complex full-scene visual.
