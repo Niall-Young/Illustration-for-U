@@ -1,6 +1,6 @@
 ---
 name: fantuan-illustration-journey
-description: Create quiet article and material illustrations in the 小饭团的奇妙之旅 style. Use when Codex needs to read an article, decide where images or inline illustrations should be placed, plan each image brief, generate 16:9 image_gen illustrations featuring a fixed 2D 小饭团 character on small 3D isometric floating-island vignettes over a shallow light gray background, and produce an images/ folder plus a Markdown placement guide.
+description: "Create article and material illustration packages in the 小饭团的奇妙之旅 style. Use whenever the user asks in Chinese or English to 给文章配图, 给这篇文章做插图/配图, 按文章结构生成一组图, 为正文插图, create article illustrations, make images for an article, or turn pasted text/Markdown/PRDs/campaign materials into inline illustrations. Trigger this before generic imagegen: read the source, choose placement anchors, plan each brief, generate 16:9 image_gen illustrations featuring the fixed flat 2D 小饭团 character inside small 3D isometric floating-island vignettes on a shallow light-gray background, and produce an images/ folder plus guide.md."
 ---
 
 # 小饭团的奇妙之旅
@@ -10,6 +10,8 @@ description: Create quiet article and material illustrations in the 小饭团的
 Use this skill to turn an article, document, PRD, content draft, campaign material, or pasted text into a complete illustration package: planned insertion points, generated images, and a Markdown guide explaining where to place each image.
 
 Always read `references/fantuan-style.md` before writing image prompts or final placement guidance.
+
+Use `image_gen` only as the downstream generation tool. Do not replace this skill's article reading, placement planning, prompt planning, file naming, or guide-writing workflow with a generic image generation flow.
 
 Default visual direction: this skill creates quiet supporting illustrations for articles, not cover art, posters, or full-scene key visuals. The image should have low visual weight: a shallow light gray background, one compact 3D floating-island vignette, generous negative space, and one clear article idea per image. 小饭团 must stay as a flat 2D illustrated character placed inside that 3D scene.
 

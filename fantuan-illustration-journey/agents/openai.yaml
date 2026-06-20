@@ -1,4 +1,7 @@
 interface:
   display_name: "小饭团的奇妙之旅"
-  short_description: "为文章和物料规划并生成 2D 小饭团 + 3D 小浮岛风格插图"
-  default_prompt: "Use $fantuan-illustration-journey to plan and generate quiet in-article illustrations with a flat 2D 小饭团 character inside small 3D light-gray floating-island scenes, adding short handwritten notes only when useful."
+  short_description: "给文章/Markdown/物料配图，生成小饭团插图包"
+  default_prompt: "Use $fantuan-illustration-journey when I ask to 给文章配图 or create article illustrations: read the source, choose insertion points, then generate 16:9 小饭团 + 3D floating-island images and guide.md."
+
+policy:
+  allow_implicit_invocation: true
