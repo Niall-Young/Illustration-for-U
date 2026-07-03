@@ -1,7 +1,7 @@
 interface:
   display_name: "小饭团的奇妙之旅"
-  short_description: "给文章/Markdown/物料配图，生成小饭团插图包"
-  default_prompt: "Use $fantuan-illustration-journey when I ask to 给文章配图 or create article illustrations: read the source, choose insertion points, then generate 16:9 小饭团 + 3D floating-island images and guide.md."
+  short_description: "用固定小饭团和白底注释式场景给文章配图"
+  default_prompt: "Use $fantuan-illustration-journey when I ask to 给文章配图 or create article illustrations: read the source, choose insertion points, load only assets/fantuan-character-reference.png as the fixed mascot identity reference with tiny black line hands/feet, use text-only scene prompt rules with exact #F4F4F2 background, choose single-node/two-node/multi-node composition based on the article moment, then generate quiet 16:9 小饭团 images plus guide.md."
 
 policy:
   allow_implicit_invocation: true

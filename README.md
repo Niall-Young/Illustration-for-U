@@ -21,7 +21,21 @@ images/
 guide.md
 ```
 
-默认图片比例为 `16:9`。图片风格为浅灰色背景上的小型 3D 等轴测浮岛 + 固定形象的平面 2D 小饭团插画角色 + 少量手绘涂鸦线条和必要时的短手写批注。它应该像文章正文里的轻量插画，而不是抢占视觉重心的封面图或复杂大场景。
+默认图片比例为 `16:9`。背景固定使用浅灰色 `#F4F4F2`。图片风格为白底注释式故事板：按内容选择单节点、双节点对比或多节点过程图，配合小物件、纸条/胶带、彩色圆点、红色下划线、少量手写批注和必要时的手绘连接线。小饭团是固定形象的平面 2D 插画角色，应该像文章正文里的轻量插图，而不是抢占视觉重心的封面图或复杂大场景。
+
+### 固定角色参考图
+
+为了避免小饭团在多次生图中出现手脚、身体比例和表情漂移，skill 内置了固定角色参考图：
+
+```text
+fantuan-illustration-journey/assets/fantuan-character-reference.png
+```
+
+这张 PNG 本身由 Image Gen 生成，是每次生图时使用的身份参考图。参考图固定了小饭团的线条小黑手和线条小黑脚。执行 skill 时应先加载/附加 PNG，再让 Image Gen 只改变小饭团的动作、姿态、周围道具和场景，不要重新从文字描述里发明角色。
+
+### 场景提示词规则
+
+场景不使用图片参考，只用文字提示词规则：固定 `#F4F4F2` 背景、小节点、纸条/胶带、彩色圆点、红色下划线、手写批注，以及在流程或时间线需要时才出现的手绘连接线。不要固定每张图都有连接线；单一概念可以只有一个注释节点。
 
 ## English
 
@@ -44,4 +58,18 @@ images/
 guide.md
 ```
 
-The default image aspect ratio is `16:9`. The visual style combines a shallow light gray background, a small 3D isometric floating-island vignette, a fixed flat 2D illustrated Fantuan character, sparse hand-drawn doodle lines, and short handwritten note text when useful. It should read as a lightweight in-article illustration, not a cover image or complex full-scene visual.
+The default image aspect ratio is `16:9`. The background must use the exact fixed light gray `#F4F4F2`. The visual style uses a text-prompted annotated storyboard scene: choose a single node, two contrast nodes, or a multi-node process based on the article moment, with small objects, paper/tape scraps, colored dots, red underlines, sparse handwritten notes, and hand-drawn connector lines only when useful. Fantuan stays as the fixed flat 2D illustrated character. The image should read as a lightweight in-article illustration, not a cover image or complex full-scene visual.
+
+### Locked Character Reference
+
+To reduce mascot drift across generations, the skill includes a fixed character reference:
+
+```text
+fantuan-illustration-journey/assets/fantuan-character-reference.png
+```
+
+The PNG itself was generated with Image Gen. It fixes Fantuan's tiny black line hands and tiny black line feet. Use it as the identity reference for image generation. Skill runs should load or attach the PNG first, then ask Image Gen to change only Fantuan's action, pose, nearby props, and scene instead of reinventing the character from text.
+
+### Scene Prompt Rules
+
+The scene does not use an image reference. Express it as prompt text only: exact `#F4F4F2` background, small nodes, paper/tape scraps, colored dots, red underlines, handwritten notes, and hand-drawn connector lines only when a process or timeline needs them. Do not force every image to have connectors; a single concept can be one annotated node.
