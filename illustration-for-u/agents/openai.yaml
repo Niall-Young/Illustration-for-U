@@ -1,7 +1,7 @@
 interface:
   display_name: "Illustration for U"
   short_description: "用自定义角色、参考图和背景色生成文章正文配图包与guide.md"
-  default_prompt: "Use $illustration-for-u when I ask to 给文章配图 or create article illustrations: read the source, choose insertion points, use my character reference or the default 小饭团 preset, apply my background color or default #F4F4F2, then generate quiet 16:9 images plus guide.md."
+  default_prompt: "Use $illustration-for-u when I ask to 给文章配图 or create article illustrations: read the source, choose insertion points, use my character reference or the default 粉色海星 preset, lock that character's own structure/anatomy, apply my background color or default #F4F4F2, generate each quiet 16:9 scene directly with image_gen instead of local character cutout compositing, reject rectangular/masked/pasted-character artifacts, then produce images/ plus guide.md."
 
 policy:
   allow_implicit_invocation: true
